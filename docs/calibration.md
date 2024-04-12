@@ -2,7 +2,7 @@
 sort: 4
 ---
 
-# Mermaid Test
+# Calibration
 
     ```mermaid
     graph TB
@@ -58,3 +58,5 @@ erDiagram
     ORDER ||--|{ LINE-ITEM : contains
     CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
 ```
+
+# Synchronization

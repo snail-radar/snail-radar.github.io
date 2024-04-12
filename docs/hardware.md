@@ -2,7 +2,9 @@
 sort: 2
 ---
 
-# Toasts Card
+# Hardware Setup
+
+Add photos of the three hardware setup here.
 
 THIS IS TOO LONG, NEED UPDATE! HERE IS SOME IDEAS:
 

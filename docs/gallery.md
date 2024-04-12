@@ -1,8 +1,8 @@
 ---
-sort: 7
+sort: 8
 ---
 
-# Avatar Test
+# Gallery of Data Collection Photos
 
 ```
 {% raw %}{% avatar saowang %}{% endraw %}
