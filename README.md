@@ -22,7 +22,25 @@ You can [generate](https://github.com/rundocs/starter-slim/generate) with the sa
 
 ## Usage
 
-Documentation that can guide how to create with Github pages, please refer to [rundocs.io](https://rundocs.io) for details
+Documentation that can guide how to create with Github pages, please refer to [rundocs.io](https://rundocs.io) for details.
+
+### Build and test drive
+
+Referring to [here](https://jekyllrb.com/docs/),
+
+Install the jekyll environment,
+```
+sudo gem install jekyll bundler
+sudo apt install ruby ruby-bundler
+bundle install
+```
+
+Build and run
+```
+cd jekyll-rtd-theme
+bundle exec jekyll serve
+```
+
 
 ## Features
 
