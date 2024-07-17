@@ -4,11 +4,15 @@ sort: 2
 
 # Hardware Setup
 
-Add photos of the three hardware setup here.
+Our dataset, dubbed snail-radar, is collected using three platforms, a handheld device, an e-bike, and an SUV. The three platforms share almost the same sensor rig as the data collection was carried out sequentially across these platforms.
 
 This is the handheld rig.
 
 ![handheld rig]({{ site.baseurl }}/assets/images/handheld-rig.png){:width="25%"}
+
+![ebike rig]({{ site.baseurl }}/assets/images/ebike-rig.png){:width="25%"}
+
+![suv rig]({{ site.baseurl }}/assets/images/suv-rig.png){:width="25%"}
 
 THIS IS TOO LONG, NEED UPDATE! HERE IS SOME IDEAS:
 
