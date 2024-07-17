@@ -8,6 +8,19 @@ A large scale dataset for benchmarking 4D radar-based odometry, mapping, and pla
 ## Brief description
 
 A dataset collected by 4D radars, stereo cameras, and lidars.
+The preprint paper describing the dataset is at [arXiv](https://arxiv.org/abs/2407.11705).
+
+```bibtex
+@misc{huai2024snailradar,
+  title={Snail-Radar: A large-scale diverse dataset for the evaluation of 4D-radar-based SLAM systems},
+  author={Jianzhu Huai and Binliang Wang and Yuan Zhuang and Yiwen Chen and Qipeng Li and Yulong Han and Charles Toth},
+  year={2024},
+  eprint={2407.11705},
+  archivePrefix={arXiv},
+  primaryClass={cs.RO},
+  url={https://arxiv.org/abs/2407.11705},
+}
+```
 
 ## Quick start
 

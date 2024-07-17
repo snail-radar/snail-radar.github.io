@@ -6,6 +6,10 @@ sort: 2
 
 Add photos of the three hardware setup here.
 
+This is the handheld rig.
+
+![handheld rig]({{ site.baseurl }}/assets/images/handheld-rig.png){:width="25%"}
+
 THIS IS TOO LONG, NEED UPDATE! HERE IS SOME IDEAS:
 
 - https://primer.style/css/components/box
