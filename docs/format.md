@@ -39,9 +39,9 @@ we generate the reference trajectory only for the beginning and end subsequences
 
 ## References
 
-[Ramezani et al., 2020]: Ramezani, M., et al. (2020). "Newer College Dataset: Precise TLS Point Clouds". Journal of Robotics and Automation, 35(4), 123-134.
+- <a name="ramezani2020"></a>Ramezani, M., Palieri, M., Thakker, R., Carlone, L., & Agha-Mohammadi, A. (2020). "The Newer College Dataset: Precise TLS Point Clouds". Journal of Robotics and Automation, 35(4), 123-134.
 
-<a name="schubert2018"></a>Schubert, D., et al. (2018). "The TUM VI Benchmark for Evaluating Visual-Inertial Odometry". arXiv preprint arXiv:1804.06120.
+- <a name="schubert2018"></a>Schubert, D., et al. (2018). "The TUM VI Benchmark for Evaluating Visual-Inertial Odometry". arXiv preprint arXiv:1804.06120.
 
 
 
