@@ -1,7 +1,7 @@
 # Snail Radar Dataset
 
-![CI](https://github.com/rundocs/jekyll-rtd-theme/workflows/CI/badge.svg?branch=develop)
-![jsDelivr](https://data.jsdelivr.com/v1/package/gh/rundocs/jekyll-rtd-theme/badge)
+<!-- ![CI](https://github.com/rundocs/jekyll-rtd-theme/workflows/CI/badge.svg?branch=develop) -->
+<!-- ![jsDelivr](https://data.jsdelivr.com/v1/package/gh/rundocs/jekyll-rtd-theme/badge) -->
 
 4D radars are increasingly favored for odometry and mapping of autonomous systems due to their robustness in harsh weather and dynamic environments. Existing datasets, however, often cover limited areas and are typically captured using a single platform. To address this gap, we present a diverse large-scale dataset specifically designed for 4D radar-based localization and mapping. This dataset was gathered using three different platforms: a handheld device, an e-bike, and an SUV, under a variety of environmental conditions, including clear days, nighttime, and heavy rain. 
 
