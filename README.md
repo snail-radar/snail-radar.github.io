@@ -13,7 +13,7 @@ The preprint paper describing the dataset is at [arXiv](https://arxiv.org/abs/24
 ```bibtex
 @misc{huai2024snailradar,
   title={Snail-Radar: A large-scale diverse dataset for the evaluation of 4D-radar-based SLAM systems},
-  author={Jianzhu Huai and Binliang Wang and Yuan Zhuang and Yiwen Chen and Qipeng Li and Yulong Han and Charles Toth},
+  author={Jianzhu Huai and Binliang Wang and Yuan Zhuang and Yiwen Chen and Qipeng Li and Yulong Han},
   year={2024},
   eprint={2407.11705},
   archivePrefix={arXiv},
@@ -24,7 +24,9 @@ The preprint paper describing the dataset is at [arXiv](https://arxiv.org/abs/24
 
 ## Quick start
 
-**The dataset can be downloaded from [OneDrive](https://1drv.ms/f/c/60208caf9367dbb1/ErHbZ5OvjCAggGAHDQAAAAABCBUW1vutI7GYt95u7EB-Mg)**.
+**The dataset can be downloaded from either 
+[OneDrive](https://1drv.ms/f/c/60208caf9367dbb1/ErHbZ5OvjCAggGAHDQAAAAABCBUW1vutI7GYt95u7EB-Mg)
+or [Baidu Netdisk(百度网盘)](https://pan.baidu.com/s/1wLjt2fIn5EDescEgf3D7gQ) 提取码: 3141**.
 
 We provided zipped rosbags and zipped data folders.
 

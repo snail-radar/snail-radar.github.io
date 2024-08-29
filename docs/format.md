@@ -24,6 +24,13 @@ The ROS1 themes and message types in the published rosbags, as well as the corre
 |                   | /zed2i/zed_node/right_raw/image_raw_gray/compressed  | CompressedImage     | zed2i/right        | jpg        |
 |                   | /zed2i/zed_node/odom                                 | Odometry            | zed2i              | txt        |
 
+```tip
+The Oculii point clouds' xyz coordinates are in the forward left up frame,
+whereas the Oculii's native frame is a right down forward frame.
+The two frames are related by a constant rotation as given in the 
+[matlab code](https://github.com/snail-radar/dataset_tools/tree/main/matlab).
+
+```
 
 <!---
 `inline code`
