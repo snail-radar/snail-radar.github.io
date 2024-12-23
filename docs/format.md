@@ -31,6 +31,54 @@ The two frames are related by a constant rotation as given in the
 [matlab code](https://github.com/snail-radar/dataset_tools/tree/main/matlab).
 
 ```
+<!-- idx, seq path, weather station query time, start unix time, end unix time, start local time, end local time -->
+
+<table>
+    <thead>
+        <tr>
+            <th>Idx</th>
+            <th>Sequence Path</th>
+            <th>Start Unix Time</th>
+            <th>End Unix Time</th>
+            <th>Start Local Time</th>
+            <th>End Local Time</th>
+            <th>Weather Station Query Time</th>
+            <th>Temperature (℃)</th>
+            <th>Relative Humidity (%)</th>
+            <th>Wind Speed (m/s)</th>
+            <th>Hourly Precipitation (mm)</th>
+            <th>Route</th>
+            <th>Platform</th>
+            <th>Traveled Distance (m)</th>
+            <th>Duration (sec)</th>
+            <th>Weather</th>
+            <th>Lighting</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for row in site.data.general %}
+        <tr>
+            <td>{{ row["idx"] }}</td>
+            <td>{{ row["seq path"] }}</td>
+            <td>{{ row["start unix time"] }}</td>
+            <td>{{ row["end unix time"] }}</td>
+            <td>{{ row["start local time"] }}</td>
+            <td>{{ row["end local time"] }}</td>
+            <td>{{ row["weather station query time"] }}</td>
+            <td>{{ row["temperature(℃)"] }}</td>
+            <td>{{ row["relative humidity(%)"] }}</td>
+            <td>{{ row["wind speed(m/s)"] }}</td>
+            <td>{{ row["hourly precipitation (mm)"] }}</td>
+            <td>{{ row["route"] }}</td>
+            <td>{{ row["platform"] }}</td>
+            <td>{{ row["traveled distance(m)"] }}</td>
+            <td>{{ row["duration(sec)"] }}</td>
+            <td>{{ row["weather"] }}</td>
+            <td>{{ row["lighting"] }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
 
 <!---
 `inline code`

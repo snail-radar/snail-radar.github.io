@@ -87,3 +87,7 @@ The 44 sequences of our dataset are repeatedly collected at 8 places with three 
 
 ## Docs
 The details about the benchmark are at [the docs](./docs/).
+
+## License
+
+This SNAIL radar dataset is made available under the [Open Database License](./assets/license/opendatacommons.org_licenses_odbl_odbl-10.txt). Any rights in individual contents of the dataset are licensed under the [Database Contents License](./assets/license/opendatacommons.org_licenses_dbcl_dbcl-10.txt).
