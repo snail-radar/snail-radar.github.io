@@ -4,6 +4,83 @@ sort: 3
 
 # Data Format
 
+For each sequence, a monolithic rosbag as well as a folder containing separate messages as individual files is provided on OneDrive.
+
+The ROS1 themes and message types in the published rosbags, as well as the corresponding folders in the published zip files, are as follows:
+
+| **Sensor**        | **Topic**                                            | **ROS message**     | **Folder**         | **Format** |
+|-------------------|------------------------------------------------------|---------------------|--------------------|------------|
+| Conti ARS548      | /ars548                                              | PointCloud2         | ars548/points      | pcd        |
+| Hesai XT32        | /hesai/pandar                                        | PointCloud2         | xt32               | pcd        |
+| MTi3DK IMU        | /mti3dk/imu                                          | Imu                 | mti3dk             | txt        |
+| Oculii Eagle      | /radar_enhanced_pcl2                                 | PointCloud2         | eagleg7/enhanced   | pcd        |
+|                   | /radar_pcl2                                          | PointCloud2         | eagleg7/pcl        | pcd        |
+|                   | /radar_trk                                           | PointCloud          | eagleg7/trk        | bin        |
+| Bynav X36D        | /x36d/gnss                                           | NavSatFix           | x36d               | txt        |
+|                   | /x36d/gnss_ins                                       | NavSatFix           | x36d               | txt        |
+|                   | /x36d/imu_raw                                        | Imu                 | x36d               | txt        |
+| ZED2i             | /zed2i/zed_node/imu/data                             | Imu                 | zed2i              | txt        |
+|                   | /zed2i/zed_node/left_raw/image_raw_gray/compressed   | CompressedImage     | zed2i/left         | jpg        |
+|                   | /zed2i/zed_node/right_raw/image_raw_gray/compressed  | CompressedImage     | zed2i/right        | jpg        |
+|                   | /zed2i/zed_node/odom                                 | Odometry            | zed2i              | txt        |
+
+```tip
+The Oculii point clouds' xyz coordinates are in the forward left up frame,
+whereas the Oculii's native frame is a right down forward frame.
+The two frames are related by a constant rotation as given in the 
+[matlab code](https://github.com/snail-radar/dataset_tools/tree/main/matlab).
+
+```
+<!-- idx, seq path, weather station query time, start unix time, end unix time, start local time, end local time -->
+
+<table>
+    <thead>
+        <tr>
+            <th>Idx</th>
+            <th>Sequence Path</th>
+            <th>Start Unix Time</th>
+            <th>End Unix Time</th>
+            <th>Start Local Time</th>
+            <th>End Local Time</th>
+            <th>Weather Station Query Time</th>
+            <th>Temperature (℃)</th>
+            <th>Relative Humidity (%)</th>
+            <th>Wind Speed (m/s)</th>
+            <th>Hourly Precipitation (mm)</th>
+            <th>Route</th>
+            <th>Platform</th>
+            <th>Traveled Distance (m)</th>
+            <th>Duration (sec)</th>
+            <th>Weather</th>
+            <th>Lighting</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for row in site.data.general %}
+        <tr>
+            <td>{{ row["idx"] }}</td>
+            <td>{{ row["seq path"] }}</td>
+            <td>{{ row["start unix time"] }}</td>
+            <td>{{ row["end unix time"] }}</td>
+            <td>{{ row["start local time"] }}</td>
+            <td>{{ row["end local time"] }}</td>
+            <td>{{ row["weather station query time"] }}</td>
+            <td>{{ row["temperature(℃)"] }}</td>
+            <td>{{ row["relative humidity(%)"] }}</td>
+            <td>{{ row["wind speed(m/s)"] }}</td>
+            <td>{{ row["hourly precipitation (mm)"] }}</td>
+            <td>{{ row["route"] }}</td>
+            <td>{{ row["platform"] }}</td>
+            <td>{{ row["traveled distance(m)"] }}</td>
+            <td>{{ row["duration(sec)"] }}</td>
+            <td>{{ row["weather"] }}</td>
+            <td>{{ row["lighting"] }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<!---
 `inline code`
 
 [`inline code inside link`](./)
@@ -33,3 +110,4 @@ sort: 3
   }
 }
 ```
+--->

@@ -1,0 +1,3 @@
+gnss_ins.log,field,comment
+,status,"0 for nonfixed, 1 for fixed"
+,service,1 for GNSS

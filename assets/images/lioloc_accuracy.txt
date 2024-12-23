@@ -1,0 +1,4 @@
+20231109/data3
+Associated 5095 pairs out of 5135 and 5136 with tol 0.015000 s
+Position error: median: 0.043803, mean: 0.044816, max: 0.258388, min: 0.000609, rms: 0.050767 m
+Orientation error: median: 0.290603, mean: 0.356923, max: 3.287716, min: 0.006700, rms: 0.450813 degrees
