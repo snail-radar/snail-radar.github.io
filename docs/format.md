@@ -6,6 +6,23 @@ sort: 3
 
 For each sequence, a monolithic rosbag as well as a folder containing separate messages as individual files is provided on OneDrive.
 
+The folder structure is described below,
+
+| Path              | Description                                      |
+|-------------------|--------------------------------------------------|
+| **root/**         | The base directory of the project.               |
+| **data/**         | Directory containing input data files.           |
+| data/file1.csv    | The first data file.                             |
+| data/file2.csv    | The second data file.                            |
+| ...               | Additional files in this folder.                 |
+| data/file99.csv   | The last data file.                              |
+| **scripts/**      | Directory containing Python scripts.             |
+| scripts/script1.py| The first script file.                           |
+| ...               | Additional scripts in this folder.               |
+| scripts/scriptN.py| The last script file.                            |
+| README.md         | Guide for understanding the project structure.   |
+
+
 The ROS1 themes and message types in the published rosbags, as well as the corresponding folders in the published zip files, are as follows:
 
 | **Sensor**        | **Topic**                                            | **ROS message**     | **Folder**         | **Format** |

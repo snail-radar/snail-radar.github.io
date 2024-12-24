@@ -12,7 +12,6 @@ The following are handheld, e-bike, and SUV data collection platforms respective
 ![ebike rig]({{ site.baseurl }}/assets/images/ebike-rig.png){:width="34%"}
 ![suv rig]({{ site.baseurl }}/assets/images/suv-rig.png){:width="24%"}
 
-
 # Sensor Setups
 We assembled the sensors on a aluminum frame designed with CAD, ensuring it was waterproof.
 The handheld rig consists of a Hesai Pandar XT32 lidar, an Oculii Eagle radar, a ZED2i stereo camera, and a Bynav X36D GNSS/INS system with a single antenna.
@@ -49,7 +48,17 @@ The accelerometer noise and random walk are in units of m/s^2/√Hz and m/s^3/�
 | Lidar              | Hesai Pandar XT32  | 10       | max range 120 m <br> range accuracy ±2 cm <br> FOV 360°×31° <br> \#point/frame ~90000                      |
 | Stereo camera      | ZED2i              | 20       | 1280×720, grayscale, <br> HFOV 110°, VFOV 70°                                                        |
 
+# Manuals
 
+[Oculii Eagle](./manuals/Manual Edition 0.5.41 Dec2021 Eagle G7.pdf)
+
+[MTi-3DK](./manuals/MTi-3.pdf)
+
+[ARS548](./manuals/Short_Description_2021_09_16-00_ARS548RDI_en_V1.0.pdf)
+
+[X36D in Chinese](./manuals/UG035_X36D_%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_%E5%8C%97%E4%BA%91%E7%A7%91%E6%8A%80_20230418.pdf)
+
+[ZED2i](https://www.stereolabs.com/en-hk/store/products/zed-2i)
 
 <!---
 THIS IS TOO LONG, NEED UPDATE! HERE IS SOME IDEAS:
