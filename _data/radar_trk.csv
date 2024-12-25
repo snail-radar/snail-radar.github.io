@@ -1,5 +1,6 @@
 topic,field,comment
-radar_trk,x,ars548 frame
-,y,
-,z,
-,VelX,
+/radar_trk,VeloX,
+,VeloY,
+,VeloZ,
+,Class,
+,Confidence,

@@ -1,4 +1,18 @@
 topic,field,comment
-/radar_enhanced_pcl2,x,
-,y,
-,z,
+/radar_enhanced_pcl2,x,X-coordinate in radar sensor frame (m)
+,y,Y-coordinate in radar sensor frame (m)
+,z,Z-coordinate in radar sensor frame (m)
+,Doppler,Doppler shift (m/s)
+,Range,Distance from radar sensor to the target (m)
+,Power,Radar return signal strength
+,Alpha,Azimuth angle
+,Beta,Elevation angle
+,rangeAccu,
+,aziAccu,
+,eleAccu,
+,dopplerAccu,
+,recoveredSpeed,
+,dotFlags,
+,denoiseFlag,
+,historyFrameFlag,
+,dopplerCorrectionFlag,
