@@ -1,5 +1,7 @@
 topic,field,comment
-hesaipandar,x,PandarXT-32 frame
-,y,
-,z,
-,intensity,
+/hesai/pandar,x,X-coordinate in PandarXT-32 frame
+,y,Y-coordinate in PandarXT-32 frame
+,z,Z-coordinate in PandarXT-32 frame
+,intensity,Return intensity of the laser pulse
+,timestamp,Time when the point was recorded
+,ring,Laser ring number
