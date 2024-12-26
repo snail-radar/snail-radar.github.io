@@ -81,12 +81,9 @@ The 44 sequences of our dataset are repeatedly collected at 8 places with three 
 
 
 
-## Usage
+## SDK Tools
 
-**The source code to create the rosbags from the raw data and vice versa and the calibration data are available at [here](https://github.com/snail-radar/dataset_tools)**.
-
-## Docs
-The details about the benchmark are at [the docs](./docs/).
+**The SDK tools to load, visualize, convert the dataset sequences for ROS1 bags and file folders are available [here](https://github.com/snail-radar/dataset_tools)**.
 
 
 ## Issues

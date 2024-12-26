@@ -1,12 +1,12 @@
 topic,field,comment
-/radar_enhanced_pcl2,x,X-coordinate in radar sensor frame (m)
-,y,Y-coordinate in radar sensor frame (m)
-,z,Z-coordinate in radar sensor frame (m)
-,Doppler,Doppler shift (m/s)
+/radar_enhanced_pcl2,x,X-coordinate in the Oculii frame (m)
+,y,Y-coordinate in the Oculii frame (m)
+,z,Z-coordinate in the Oculii frame (m)
+,Doppler,Doppler velocity (m/s)
 ,Range,Distance from radar sensor to the target (m)
-,Power,Radar return signal strength
-,Alpha,Azimuth angle
-,Beta,Elevation angle
+,Power,Radar return signal strength proportional to RCS
+,Alpha,Azimuth angle in degrees wrt the Oculii native frame as defined in its manual.
+,Beta,Elevation angle in degrees wrt the Oculii native frame as defined in its manual.
 ,rangeAccu,
 ,aziAccu,
 ,eleAccu,

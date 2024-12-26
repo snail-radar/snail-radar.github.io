@@ -3,5 +3,5 @@ topic,field,comment
 ,y,Y-coordinate in PandarXT-32 frame
 ,z,Z-coordinate in PandarXT-32 frame
 ,intensity,Return intensity of the laser pulse
-,timestamp,Time when the point was recorded
+,timestamp,Time in seconds when the point was recorded
 ,ring,Laser ring number

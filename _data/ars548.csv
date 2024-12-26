@@ -2,9 +2,9 @@ topic,field,comment
 /ars548,x,X-coordinate in ars548 frame
 ,y,Y-coordinate in ars548 frame
 ,z,Z-coordinate in ars548 frame
-,doppler,Doppler shift (m/s)
+,doppler,Doppler velocity (m/s)
 ,intensity,RCS (db*m^2)
 ,range_std,Standard deviation of the range
 ,azimuth_std,Standard deviation of the azimut
 ,elevation_std,Standard deviation of the elevation
-,doppler_std,Standard deviation of the Doppler shift
+,doppler_std,Standard deviation of the Doppler velocity

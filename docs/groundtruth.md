@@ -6,16 +6,11 @@ sort: 5
 
 ## Accurate poses relative to the TLS map
 
-These poses are in ref_trajs/*seqname*/tls_T_xt32.txt.
-We generate the reference poses using precise TLS point clouds, similar to [Ramezani et al., 2020](#ramezani2020). But instead of frame-wise ICP, we sequentially align the undistorted lidar frames to the TLS map using a LIO method. 
+These poses are in ref_trajs/*seqname*/tls_T_xt32.txt, which are the poses of the PandarXT-32 frame relative to the TLS world frame.
+We generate the reference poses using precise TLS point clouds, similar to [Ramezani et al., 2020](#ramezani2020). But instead of frame-wise ICP, we sequentially align the undistorted lidar frames to the TLS map using a LIO method in forward and backward passes and then take their averages.
 
 A total of 93 TLS scans were captured by a Leica RTC360 scanner on a sunny day, covering the starlake and the starlake tower routes. In capturing these scans, we ensured sufficient overlap between consecutive scans, with a mean distance of 28.2 m between consecutive scans. These scans were first processed using the Cyclone Register 360 program, with manually identified additional loop constraints between some scans. The TLS scan registration results were further refined by point-to-plane ICP in Open3D and regularized by SE(3) pose graph optimization with uniform weights while considering the two loops within these scans. The pairwise registration results were inspected by three individuals over approximately 10 rounds to ensure proper pairwise matching. The position accuracy of the TLS pairwise registration is expected to be within 5 cm. The final TLS map was created by stitching together these 93 scans.
 
-![lioloc_accuracy rig]({{ site.baseurl }}/assets/images/lioloc_accuracy.png){:width="90%"}
-
-For the 20231109/3 sequence, positions of lidar frames relative to the TLS map obtained through forward and backward processing using the LIO method in localization mode.
-By associating forward and backward poses with a time tolerance 0.015 s,
-we obtain the RMS position error 5.08 cm, and the RMS orientation error 0.45 degrees.
 
 ```note
 For large-scale sequences, since the TLS map only covers the beginning and end parts of the sequence,
@@ -28,14 +23,16 @@ This does not prevent using these reference poses for odometry evalution with e.
 As described in the paper, we average the forward and backward LIO localization results as reference solutions, 
 the difference between the forward and the average trajectory serve as a reference solution quality indicator.
 We tabulate the max and median deviations in translation and rotation in the paper.
-Also, we visualize the deviations on the two most challenging trajectories with colormaps
+While most sequences have max deviations less than 5 cm and 0.5 degrees, 
+there are two challenging sequences with large deviations at confined locations as visualized below.
+Top: 20230920/2, Bottom: 20231105/4.
 
 <!-- ![lioloc_accuracy rig]({{ site.baseurl }}/assets/images/lioloc_accuracy.png){:width="90%"} -->
-![20230920/2 trans deviations](./assets/images/20230920_data2_trans.png){:width="40%"}
-![20230920/2 rot deviations](./assets/images/20230920_data2_rot.png){:width="40%"}
+![20230920/2 trans deviations]({{ site.baseurl }}/assets/images/20230920_data2_trans.png){:width="40%"}
+![20230920/2 rot deviations]({{ site.baseurl }}/assets/images/20230920_data2_rot.png){:width="40%"}
 
-![20231105/4 trans deviations](./assets/images/20231105_data4_trans.png){:width="40%"}
-![20231105/4 rot deviations](./assets/images/20231105_data4_rot.png){:width="40%"}
+![20231105/4 trans deviations]({{ site.baseurl }}/assets/images/20231105_data4_trans.png){:width="40%"}
+![20231105/4 rot deviations]({{ site.baseurl }}/assets/images/20231105_data4_rot.png){:width="40%"}
 
 ## GNSS/INS poses from the X36D 
 

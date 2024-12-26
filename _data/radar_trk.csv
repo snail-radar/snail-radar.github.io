@@ -1,6 +1,6 @@
 topic,field,comment
-/radar_trk,VeloX,
-,VeloY,
-,VeloZ,
+/radar_trk,VeloX,velocity along x-axis of Oculii frame
+,VeloY,velocity along y-axis of Oculii frame
+,VeloZ,velocity along z-axis of Oculii frame
 ,Class,
 ,Confidence,

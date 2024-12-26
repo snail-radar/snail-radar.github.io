@@ -1,8 +1,9 @@
 frame,comment
-Bynav x36d,Forward left up
-Hesai Pandar XT-32,Left backward up
-ARS548,Forward left up
-Oculii,Right down forward
-Zed2i IMU,Forward left up
-Zed2Ii,Right down forward
-MTi3DK,Forward left up
+Bynav x36d,Forward left up relative to the platform
+Hesai Pandar XT-32,Left backward up relative to the platform
+ARS548,Forward left up relative to the platform
+Oculii,Forward left up relative to the platform
+Oculii native,Original frame used by Oculii as right down forward relative to the platform
+Zed2i IMU,Forward left up relative to the platform
+Zed2Ii,Right down forward relative to the platform
+MTi3DK,Forward left up relative to the platform

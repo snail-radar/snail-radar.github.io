@@ -8,6 +8,8 @@ We organize these sequences in cloud storage based on the day they were captured
 
 For each sequence, a monolithic rosbag as well as a folder containing separate messages as individual files is provided on OneDrive.
 
+## Folder Structure
+
 The folder structure is described below with the example sequence 20240123/data3
 
 - **data3/**: a sequence
@@ -88,6 +90,7 @@ def parseSolutionStatus(pos_type):
     return status
 ```
 
+## ROS1 Messages to Files in a Folder
 
 The ROS1 themes and message types in the published rosbags, as well as the corresponding folders in the published zip files, are as follows:
 
@@ -107,14 +110,10 @@ The ROS1 themes and message types in the published rosbags, as well as the corre
 |                   | /zed2i/zed_node/right_raw/image_raw_gray/compressed  | CompressedImage     | zed2i/right        | jpg        |
 |                   | /zed2i/zed_node/odom                                 | Odometry            | zed2i              | txt        |
 
-```tip
-The Oculii point clouds' xyz coordinates are in the forward left up frame,
-whereas the Oculii's native frame is a right down forward frame.
-The two frames are related by a constant rotation as given in the 
-[matlab code](https://github.com/snail-radar/dataset_tools/tree/main/matlab).
 
-```
-<!-- idx, seq path, weather station query time, start unix time, end unix time, start local time, end local time -->
+## Sequence Attributes
+
+We list the basic attributes of each sequence of our dataset in the below table.
 
 <table>
     <thead>
@@ -163,34 +162,93 @@ The two frames are related by a constant rotation as given in the
     </tbody>
 </table>
 
-<!---
-`inline code`
+## Field Descriptions of Key Sensor Messages
 
-[`inline code inside link`](./)
+### ARS548
 
-```
-:root {
-  @for $level from 1 through 12 {
-    @if $level % 4 == 0 {
-      --toc-#{$level}: #{darken($theme-white, 4 * 8.8%)};
-    } @else {
-      --toc-#{$level}: #{darken($theme-white, $level % 4 * 8.8%)};
-    }
-  }
-}
-```
+<table>
+  <thead>
+    <tr>
+      <th>Topic</th>
+      <th>Field</th>
+      <th>Comment</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% assign csv_data = site.data.ars548 %}
+    {% for row in csv_data %}
+    <tr>
+      <td>{{ row.topic }}</td>
+      <td>{{ row.field }}</td>
+      <td>{{ row.comment }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
 
-**Highlight:**
+### Hesai PandarXT-32
 
-```scss
-:root {
-  @for $level from 1 through 12 {
-    @if $level % 4 == 0 {
-      --toc-#{$level}: #{darken($theme-white, 4 * 8.8%)};
-    } @else {
-      --toc-#{$level}: #{darken($theme-white, $level % 4 * 8.8%)};
-    }
-  }
-}
-```
---->
+<table>
+  <thead>
+    <tr>
+      <th>Topic</th>
+      <th>Field</th>
+      <th>Comment</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% assign csv_data = site.data.hesai_pandar %}
+    {% for row in csv_data %}
+    <tr>
+      <td>{{ row.topic }}</td>
+      <td>{{ row.field }}</td>
+      <td>{{ row.comment }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+### Oculii Enhanced
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Topic</th>
+      <th>Field</th>
+      <th>Comment</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% assign csv_data = site.data.radar_enhanced_pcl2 %}
+    {% for row in csv_data %}
+    <tr>
+      <td>{{ row.topic }}</td>
+      <td>{{ row.field }}</td>
+      <td>{{ row.comment }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+### Oculii Tracks
+
+<table>
+  <thead>
+    <tr>
+      <th>Topic</th>
+      <th>Field</th>
+      <th>Comment</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% assign csv_data = site.data.radar_trk %}
+    {% for row in csv_data %}
+    <tr>
+      <td>{{ row.topic }}</td>
+      <td>{{ row.field }}</td>
+      <td>{{ row.comment }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
