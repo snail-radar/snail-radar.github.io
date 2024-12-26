@@ -20,8 +20,22 @@ we obtain the RMS position error 5.08 cm, and the RMS orientation error 0.45 deg
 ```note
 For large-scale sequences, since the TLS map only covers the beginning and end parts of the sequence,
 we generate the reference trajectory only for the beginning and end subsequences within the TLS coverage, as done in TUM-VI [Schubert et al., 2018](#schubert2018).
+This does not prevent using these reference poses for odometry evalution with e.g., the [rpg trajectory evaluation tool](https://github.com/uzh-rpg/rpg_trajectory_evaluation)
 
 ```
+
+### Quality check
+As described in the paper, we average the forward and backward LIO localization results as reference solutions, 
+the difference between the forward and the average trajectory serve as a reference solution quality indicator.
+We tabulate the max and median deviations in translation and rotation in the paper.
+Also, we visualize the deviations on the two most challenging trajectories with colormaps
+
+<!-- ![lioloc_accuracy rig]({{ site.baseurl }}/assets/images/lioloc_accuracy.png){:width="90%"} -->
+![20230920/2 trans deviations](./assets/images/20230920_data2_trans.png){:width="40%"}
+![20230920/2 rot deviations](./assets/images/20230920_data2_rot.png){:width="40%"}
+
+![20231105/4 trans deviations](./assets/images/20231105_data4_trans.png){:width="40%"}
+![20231105/4 rot deviations](./assets/images/20231105_data4_rot.png){:width="40%"}
 
 ## GNSS/INS poses from the X36D 
 
