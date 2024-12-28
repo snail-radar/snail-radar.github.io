@@ -114,7 +114,10 @@ The ROS1 themes and message types in the published rosbags, as well as the corre
 ## Sequence Attributes
 
 We list the basic attributes of each sequence of our dataset in the below table.
+By comparing the record of a weather station 20 Km away from the data collection routes, and our own weather record,
+we are happy to see the good agreement.
 
+<a name="seq-attribute-table"></a>
 <table>
     <thead>
         <tr>

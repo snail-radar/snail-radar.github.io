@@ -80,11 +80,26 @@ The 44 sequences of our dataset are repeatedly collected at 8 places with three 
 |             | S   | 20240123/2      | 8539/1743          |                    |
 
 
+### A more detailed table for these sequences with additional attributes can be found [here](docs/format.html#seq-attribute-table).
 
 ## SDK Tools
 
 **The SDK tools to load, visualize, convert the dataset sequences for ROS1 bags and file folders are available [here](https://github.com/snail-radar/dataset_tools)**.
 
+## Software Programs Developed for this Dataset
+
+During creation this dataset, we have developed several useful tools.
+
+### Time offset and rotation calibration tool
+Time offset and rotation calibration tool in matlab is released at [here](https://github.com/JzHuai0108/td_rot_calib).
+The core of the algorithm is FFT-based correlation.
+
+### Cascaded pose graph optimization
+Cascaded pose graph optimization is released at [here](https://github.com/JzHuai0108/cascaded_pgo).
+The core of the algorithm is weighted pose graph optimization.
+Features include right invariant pose error, IMU preintegration factor, and ceres solver.
+
+These programs are made strong by running through hundreds of trials set up by this large dataset.
 
 ## Issues
 Please post the issues at [the github repo issue tracker for this website source repo](https://github.com/snail-radar/snail-radar.github.io/issues).
