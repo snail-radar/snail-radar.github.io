@@ -6,7 +6,7 @@ sort: 5
 
 ## Accurate poses relative to the TLS map
 
-These poses are in ref_trajs/*seqname*/tls_T_xt32.txt, which are the poses of the PandarXT-32 frame relative to the TLS world frame.
+These poses are in ref_trajs/*seqname*/ref_tls_T_xt32.csv, which are the poses and velocities of the PandarXT-32 frame relative to the TLS world frame.
 We generate the reference poses using precise TLS point clouds, similar to [Ramezani et al., 2020](#ramezani2020). But instead of frame-wise ICP, we sequentially align the undistorted lidar frames to the TLS map using a LIO method in forward and backward passes and then take their averages.
 
 A total of 93 TLS scans were captured by a Leica RTC360 scanner on a sunny day, covering the starlake and the starlake tower routes. In capturing these scans, we ensured sufficient overlap between consecutive scans, with a mean distance of 28.2 m between consecutive scans. These scans were first processed using the Cyclone Register 360 program, with manually identified additional loop constraints between some scans. The TLS scan registration results were further refined by point-to-plane ICP in Open3D and regularized by SE(3) pose graph optimization with uniform weights while considering the two loops within these scans. The pairwise registration results were inspected by three individuals over approximately 10 rounds to ensure proper pairwise matching. The position accuracy of the TLS pairwise registration is expected to be within 5 cm. The final TLS map was created by stitching together these 93 scans.
