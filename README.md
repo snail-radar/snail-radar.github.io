@@ -101,9 +101,11 @@ Features include right invariant pose error, IMU preintegration factor, and cere
 
 These programs are made strong by running through hundreds of trials set up by this large dataset.
 
-## Issues
-Please post the issues at [the github repo issue tracker for this website source repo](https://github.com/snail-radar/snail-radar.github.io/issues).
-We are working like cattle and horses to keep up with you.
+## Issues and Support
+
+Please submit your issues to the [dataset_tools repository](https://github.com/snail-radar/dataset_tools/issues).
+
+In the past, some issues were posted on the [source repository for this website](https://github.com/snail-radar/snail-radar.github.io/issues). Although these issues have been fixed and closed, they may serve as a useful reference.
 
 
 ## License
