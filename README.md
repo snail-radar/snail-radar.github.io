@@ -22,6 +22,16 @@ The preprint paper describing the dataset is at [arXiv](https://arxiv.org/abs/24
 }
 ```
 
+## Complementary datasets
+
+While SNAIL radar features rainy days, we also collected datasets in smoke and snowy days. For those interested, please refer to
+
+* [SmokeBasement](https://zenodo.org/records/15173055)
+
+* [SnowXinghu](https://zenodo.org/records/15181513)
+
+I am so grateful to the hosting service by zenodo.
+
 ## Quick start
 
 **The dataset can be downloaded from either 
