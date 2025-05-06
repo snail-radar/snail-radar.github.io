@@ -12,7 +12,7 @@ The preprint paper describing the dataset is at [arXiv](https://arxiv.org/abs/24
 
 ```bibtex
 @misc{huai2024snailradar,
-  title={Snail-Radar: A large-scale diverse dataset for the evaluation of 4D-radar-based SLAM systems},
+  title={SNAIL Radar: A large-scale diverse benchmark for evaluating 4D-radar-based SLAM},
   author={Jianzhu Huai and Binliang Wang and Yuan Zhuang and Yiwen Chen and Qipeng Li and Yulong Han},
   year={2024},
   eprint={2407.11705},
@@ -21,6 +21,36 @@ The preprint paper describing the dataset is at [arXiv](https://arxiv.org/abs/24
   url={https://arxiv.org/abs/2407.11705},
 }
 ```
+
+## Changelog
+
+- 2025-5-1:
+    * Update the ZED2i camera extrinsics to Lidar, and ZED2i IMU extrinsics to lidar, using [direct visual lidar calib](https://github.com/koide3/direct_visual_lidar_calibration) on new calib seqs and dataset seqs.
+    * Upload the dataset with time offset corrections and updated extrinsics to Baidu NetDisk and OneDrive.
+
+- 2025-4-6:
+    * Provide the residual time offsets.
+    * Publish the comparison of swift_vio and correlation of ORB-SLAM3 mono + zed2i IMU for time offset estimation.
+
+- 2024-12-28:
+    * Blur the faces and license plates with egoblur, 
+    * add static transform tf files into each zipped sequence folder,
+    * add metadata descriptions on the website.
+
+- 2024-08-08: 
+    * Publishes all sequences, the website, and the dataset paper.
+
+
+## Roadmap
+
+- [x] Sync all motion related messages
+- [x] Calibrate all sensor extrinsic parameters
+- [x] Recalibrate the ars548 radar extrinsics for the 20231105 morning sequences, and update the zipped folders
+- [x] Fix the Hesai PandarXT-32 Point cloud timestamps by publishing the time corrections.
+- [x] Update the Baidu Netdisk with the latest dataset on OneDrive
+- [ ] Update swift_vio with learning-based feature matchers and recalibrate the image time offsets.
+- [ ] Update the ref trajs and full trajs using the dataset with corrected time offsets.
+
 
 ## Complementary datasets
 
