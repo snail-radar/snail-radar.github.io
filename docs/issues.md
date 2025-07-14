@@ -29,13 +29,9 @@ For sequence 20230920/data2, the point cloud timestamps should instead increase 
 Oddly, for this sequence, the correlation algorithm result shows no problem by visual check.
 ```
 
-**Just like time_corrections_set1 and set2.csv, these residual td have been applied to the sequence data**, including both topics in rosbags and files in data folders.
+**Just like time_corrections_set1 and set2.csv, these residual td have been applied to the sequence data**, including both topics in rosbags and files in data folders. Also, these residual time offset corrections have been accounted for in the reference trajectories, and the full trajectories, as we regenerate them from the time corrected lidar data.
 
-Because the reference trajectories and the full trajectories are generated using the lidar timestamps before applying the residual td,
-**for accurate benchmarking, we need to correct the reference trajectories and full trajectories timestamps by plus the residual td for /hesai/pandar given in residual_td.csv**. We are working on this, and will release the corrected trajectories in a few days.
-
-
-- [ ] The time offset estimates by swift_vio may not be reliable as it often produced divergent trajectories.
+- [x] The time offset estimates by swift_vio may not be reliable as it often produced divergent trajectories.
 
 However, by comparing the time offsets estimated by using ORB-SLAM3 mono + zed2i IMU, and swift_vio for some sequences covering all three platforms, I found that their time offset estimates are pretty close.
 The comparison table is at [here](https://1drv.ms/x/c/60208caf9367dbb1/EY5Ff1GmwJFNrx668dvzA_sBUpqhaVegH_BqPXxSlvgc-w?e=H6RzkV).
@@ -43,6 +39,6 @@ The comparison table is at [here](https://1drv.ms/x/c/60208caf9367dbb1/EY5Ff1Gmw
 # Lessons Learned in Creating the Dataset
 
 - Double check every detail before setting out large-scale data collection.
-- Moving objects cause trouble for lidar-based localization to TLS maps.
+
 - Moving objects and the SUV hood cause trouble for visual inertial odometry.
 
