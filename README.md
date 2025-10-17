@@ -8,18 +8,25 @@
 ## Brief description
 
 A dataset collected by 4D radars, stereo cameras, and lidars.
-The preprint paper describing the dataset is at [arXiv](https://arxiv.org/abs/2407.11705).
+The paper describing the dataset is in [ijrr](https://journals.sagepub.com/doi/10.1177/02783649251329048).
+A slightly outdated version is on [arXiv](https://arxiv.org/abs/2407.11705).
+After all, this website provides the latest information on the dataset.
+
 
 ```bibtex
-@misc{huai2024snailradar,
-  title={SNAIL Radar: A large-scale diverse benchmark for evaluating 4D-radar-based SLAM},
-  author={Jianzhu Huai and Binliang Wang and Yuan Zhuang and Yiwen Chen and Qipeng Li and Yulong Han},
-  year={2024},
-  eprint={2407.11705},
-  archivePrefix={arXiv},
-  primaryClass={cs.RO},
-  url={https://journals.sagepub.com/doi/10.1177/02783649251329048},
+@article{huai2025snailradar,
+  author  = {Huai, Jianzhu and Wang, Binliang and Zhuang, Yuan and Chen, Yiwen and Li, Qipeng and Han, Yulong},
+  title   = {SNAIL Radar: A Large-Scale Diverse Benchmark for Evaluating 4D-Radar-Based SLAM},
+  journal = {The International Journal of Robotics Research},
+  volume  = {44},
+  number  = {12},
+  pages   = {1941--1958},
+  year    = {2025},
+  doi     = {10.1177/02783649251329048},
+  url     = {https://doi.org/10.1177/02783649251329048},
+  eprint  = {https://doi.org/10.1177/02783649251329048}
 }
+
 ```
 
 ## Changelog
